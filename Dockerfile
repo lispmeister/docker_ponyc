@@ -1,5 +1,5 @@
 # build command:
-#  docker build -t rbrewer123/ponyc .
+#  docker build -t lispmeister/ponyc .
 
 FROM ubuntu:14.04
 

@@ -9,6 +9,9 @@ This ``Dockerfile`` creates a sandboxed, runnable `Pony Compiler
 <http://ponylang.org>`_ environment based on the latest commit to master
 on GitHub.
 
+Credits
+#########
+This project was forked from https://github.com/rbrewer123/docker_ponyc
 
 Requirements
 ################
@@ -29,7 +32,7 @@ Installation
 
 To build the docker image::
 
-  $ docker build -t rbrewer123/ponyc github.com/rbrewer123/docker_ponyc
+  $ docker build -t lispmeister/ponyc github.com/lispmeister/docker_ponyc
 
 You can see your new image with this command::
 
@@ -37,7 +40,7 @@ You can see your new image with this command::
 
 Grab the ``ponyc`` script from github like this::
 
-  $ git clone https://github.com/rbrewer123/docker_ponyc
+  $ git clone https://github.com/lispmeister/docker_ponyc
 
 Now update the ``docker_ponyc/ponyc`` script to use your correct
 ``username``, ``uid``, ``group``, and ``gid``.  This avoids problems with
