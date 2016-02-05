@@ -1,7 +1,11 @@
 # build command:
-#  docker build -t lispmeister/ponyc .
+#  1. make
+#  2. make test
+#  3. make push
 
-FROM ubuntu:14.04
+
+FROM ubuntu:trusty
+MAINTAINER Markus Fix <lispmeister@gmail.com>
 
 RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
     clang-3.6 \
